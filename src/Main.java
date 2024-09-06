@@ -11,7 +11,7 @@ public class Main {
         aluno1.setNome(ler.nextLine());
         System.out.println("CPF: ");
         aluno1.setCpf(ler.nextFloat());
-        System.out.println("e-mail: ");
+        System.out.println("E-mail: ");
         aluno1.setEmail(ler.nextLine());
         System.out.println("Data de inicio: ");
         aluno1.setData(ler.nextLine());
