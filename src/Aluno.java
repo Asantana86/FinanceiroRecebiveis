@@ -1,17 +1,17 @@
 public class Aluno {
 
-    private String nome;
-    private float cpf;
+    private static String nome;
+    private static String cpf;
     private String email;
     private String data;
     private int horario;
-    private String dias;
+    private int dias;
 
     public Aluno(){
 
     }
 
-    public Aluno (String nome, float cpf){
+    public Aluno (String nome, String cpf, int dias){
         this.nome = nome;
         this.cpf = cpf;
     }
@@ -30,11 +30,11 @@ public class Aluno {
         this.email = email;
     }
 
-    public float getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(float cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
     public String getData(){
@@ -52,11 +52,11 @@ public class Aluno {
         this.horario = horario;
     }
 
-    public String getDias() {
+    public int getDias() {
         return dias;
     }
 
-    public void setDias(String dias) {
+    public void setDias(int dias) {
         this.dias = dias;
     }
 
