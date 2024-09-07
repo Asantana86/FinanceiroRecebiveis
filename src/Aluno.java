@@ -4,16 +4,20 @@ public class Aluno {
     private static String cpf;
     private String email;
     private String data;
-    private int horario;
-    private int dias;
+    private static int horario;
+    private static int dias;
 
     public Aluno(){
 
     }
 
-    public Aluno (String nome, String cpf, int dias){
+    public Aluno (String nome, String cpf){
         this.nome = nome;
         this.cpf = cpf;
+        this.dias = dias;
+    }
+    public Aluno(String nome, String cpf, int dias, int horario){
+
     }
 
     public String getNome() {

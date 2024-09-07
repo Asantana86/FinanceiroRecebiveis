@@ -4,8 +4,8 @@ public class Pagamento extends Aluno {
     public String vencimento = "Vencimento todo dia 10";
 
 
-    public Pagamento (String nome, String cpf, int dias) {
-            super(nome, cpf, dias);
+    public Pagamento (String nome, String cpf) {
+            super(nome, cpf);
             this.valor = 500.00;
 
     }
@@ -18,16 +18,19 @@ public class Pagamento extends Aluno {
     }
     public void valormensal(){
 
-        if (getDias() <= 2){
-            double preco = valor - 150.00;
+        if (getDias() == 2){
 
-            System.out.printf("Mensalidade R$ %.2f\n", preco);
+            System.out.println("Mensalidade. R$ 350,00");
             System.out.println(" ");
+
         } else if (getDias() == 3) {
-            System.out.printf("Mensalidade R$ %.2f\n", valor);
+
+            System.out.println("Mensalidade.. R$ 500,00");
             System.out.println(" ");
-        }else {
-            System.out.printf("Mensalidade R$ %.2f\n", valor == 800.00);
+
+        }else if (getDias() > 3) {
+
+            System.out.println("Mensalidade... R$ 800,00");
             System.out.println(" ");
         }
 
