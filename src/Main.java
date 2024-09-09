@@ -50,7 +50,7 @@ public class Main {
                             //ler.nextLine();// Consumir a nova linha deixada no buffer
 
                             System.out.println(" ");
-                            System.out.println("Informações cadastradas");
+                            System.out.println("Informações cadastradas com sucesso");
 
                             boletoAluno1.dataVencimento();
                             boletoAluno1.valormensal();
