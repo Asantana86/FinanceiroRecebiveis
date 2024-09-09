@@ -1,6 +1,6 @@
 public class Administrador extends Aluno {
 
-    public static String professorNome;
+    private String professorNome;
 
 
     public Administrador (String professorNome, String nome, String cpf, int horario, int dias){

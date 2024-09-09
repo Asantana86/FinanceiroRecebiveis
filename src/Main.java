@@ -60,8 +60,8 @@ public class Main {
 
                     System.out.println(" ");
                     System.out.println("Informe seu nome: ");
-                    professor1.setProfessorNome(ler.nextLine());
                     ler.nextLine();
+                    professor1.setProfessorNome(ler.nextLine());
 
                     professor1.quantidadeAlunos();
                     professor1.valorRecebido();
