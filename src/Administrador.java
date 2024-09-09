@@ -23,7 +23,7 @@ public class Administrador extends Aluno {
         System.out.println(" ");
         System.out.println("Professor:. " + getProfessorNome());
         System.out.println("Aluno: " + getNome());
-        System.out.println("Hoario das " + getHorario() +"h.");
+        System.out.println("Horario das " + getHorario() +"h.");
         System.out.println(getDias() + " dias por semana.");
     }
     public void valorRecebido(){
