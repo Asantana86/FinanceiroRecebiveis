@@ -17,20 +17,21 @@ public class Pagamento extends Aluno {
 
     }
     public void valormensal(){
-
+            double mensal = 500.00;
         if (getDias() == 2){
+            mensal = valor - 150.00;
 
-            System.out.println("Mensalidade. R$ 350,00");
+            System.out.println("Mensalidade. R$" + mensal);
             System.out.println(" ");
 
         } else if (getDias() == 3) {
 
-            System.out.println("Mensalidade.. R$ 500,00");
+            System.out.println("Mensalidade.. R$" + mensal);
             System.out.println(" ");
 
         }else if (getDias() > 3) {
-
-            System.out.println("Mensalidade... R$ 800,00");
+                mensal = valor + 300.00;
+            System.out.println("Mensalidade... R$" + mensal );
             System.out.println(" ");
         }
 

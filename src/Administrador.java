@@ -27,16 +27,17 @@ public class Administrador extends Aluno {
         System.out.println(getDias() + " dias por semana.");
     }
     public void valorRecebido(){
-
+        double mensal = 500.00;
         if (getDias() == 2){
-
-            System.out.printf("Mensalidade R$ 350,00");
+            mensal -= 150.00;
+            System.out.printf("Mensalidade R$ " + mensal);
             System.out.println(" ");
         } else if (getDias() == 3) {
-            System.out.println("Mensalidade R$ 500,00");
+            System.out.println("Mensalidade R$ " + mensal);
             System.out.println(" ");
         }else if (getDias() > 3) {
-            System.out.printf("Mensalidade R$ 800,00");
+            mensal += 300.00;
+            System.out.printf("Mensalidade R$ " + mensal);
             System.out.println(" ");
         }
 

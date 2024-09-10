@@ -16,6 +16,7 @@ public class Main {
             System.out.println(" ");
             System.out.println("1 ALUNO");
             System.out.println("2 PROFESSOR");
+            System.out.println("3 SAIR");
             acao = ler.nextInt();
             switch (acao) {
 
@@ -59,12 +60,15 @@ public class Main {
                 case 2: {
 
                     System.out.println(" ");
-                    System.out.println("Informe seu nome: ");
+                    System.out.println("Informe o nome do Professor: ");
                     ler.nextLine();
                     professor1.setProfessorNome(ler.nextLine());
 
                     professor1.quantidadeAlunos();
                     professor1.valorRecebido();
+                }break;
+                case 3: {
+                    continuar = false;
                 }break;
 
             }
