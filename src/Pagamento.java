@@ -21,17 +21,17 @@ public class Pagamento extends Aluno {
         if (getDias() == 2){
             mensal = valor - 150.00;
 
-            System.out.println("Mensalidade. R$" + mensal);
+            System.out.printf("Mensalidade R$ %.2f\n", mensal);
             System.out.println(" ");
 
         } else if (getDias() == 3) {
 
-            System.out.println("Mensalidade.. R$" + mensal);
+            System.out.printf("Mensalidade R$ %.2f\n", mensal);
             System.out.println(" ");
 
         }else if (getDias() > 3) {
                 mensal = valor + 300.00;
-            System.out.println("Mensalidade... R$" + mensal );
+            System.out.printf("Mensalidade R$ %.2f\n", mensal );
             System.out.println(" ");
         }
 

@@ -30,14 +30,14 @@ public class Administrador extends Aluno {
         double mensal = 500.00;
         if (getDias() == 2){
             mensal -= 150.00;
-            System.out.printf("Mensalidade R$ " + mensal);
+            System.out.printf("Mensalidade R$ %.2f\n",  mensal);
             System.out.println(" ");
         } else if (getDias() == 3) {
-            System.out.println("Mensalidade R$ " + mensal);
+            System.out.printf("Mensalidade R$ %.2f\n", mensal);
             System.out.println(" ");
         }else if (getDias() > 3) {
             mensal += 300.00;
-            System.out.printf("Mensalidade R$ " + mensal);
+            System.out.printf("Mensalidade R$ %.2f\n", mensal);
             System.out.println(" ");
         }
 
