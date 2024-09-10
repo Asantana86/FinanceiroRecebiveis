@@ -12,7 +12,7 @@ public class Main {
 
         while (continuar) {
             System.out.println(" ");
-            System.out.println("OLÁ ESCOLHA UMA OPÇÃO");
+            System.out.println("OLÁ ESCOLHA UMA OPÇÃO:");
             System.out.println(" ");
             System.out.println("1 ALUNO");
             System.out.println("2 PROFESSOR");
